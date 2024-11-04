@@ -43,7 +43,7 @@ This project is about *Image Compression* using *K-Means* clustering
 
 7. Result :
 
-   ![]()
+   ![](https://github.com/Srishti002/Image-Compression-using-K-means-clustering/blob/main/Images/Screenshot%202024-11-04%20184547.png)
 
 ## Conclusion :
 An Image consists of many different unique colours. After converting image(128 * 128 * 3) into 2D form we get *16384 * 3* . This means that each row represents each pixel of image and each column represents color channel. 1 pixel = 3 bytes for RGB and 1 byte = 8 bits (0-255). We will select K=16 colors from above 16384 unique colors. So we will have 16 clusters which will perfectly represent all 16384*3 colors. Each original pixel is replaced by its nearest centroid. Instead of storing RGB values we only store the *16 centroid colors(16 * 3)* and index (0,1,2...15) for each pixel (16384 values)
