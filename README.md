@@ -27,9 +27,9 @@ This project is about *Image Compression* using *K-Means* clustering
 
 ## Step By Step Guide :
 
-1. First load the desired image whichu want to compress
+1. First load the desired image which you want to compress
 2. Then convert it into 2D shape.
-3. Now randomly initialize the centroids.
+3. Now randomly initialize the centroids. Here K=16 means we are selecting 16 different pixels from 16384 pixel values.
    
    ![](https://github.com/Srishti002/Image-Compression-using-K-means-clustering/blob/main/Images/Screenshot%202024-11-04%20164657.png)
 
@@ -40,3 +40,15 @@ This project is about *Image Compression* using *K-Means* clustering
 6. Now we have to move our cluster centroids by calculating the mean of datapoints associated with the particular cluster.
 
    ![](https://github.com/Srishti002/Image-Compression-using-K-means-clustering/blob/main/Images/Screenshot%202024-11-04%20170251.png)
+
+7. Result :
+
+   ![]()
+
+## Conclusion :
+An Image consists of many different unique colours. After converting image(128 * 128 * 3) into 2D form we get *16384 * 3* . This means that each row represents each pixel of image and each column represents color channel. 1 pixel = 3 bytes for RGB and 1 byte = 8 bits (0-255). We will select K=16 colors from above 16384 unique colors. So we will have 16 clusters which will perfectly represent all 16384*3 colors. Each original pixel is replaced by its nearest centroid. Instead of storing RGB values we only store the *16 centroid colors(16 * 3)* and index (0,1,2...15) for each pixel (16384 values)
+
+Memory savings :
+Original :- 16384 * 3 values = 49152 values
+Compresses :- (16 centroids * 3 ) + 16384 = 16432 values
+
