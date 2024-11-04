@@ -38,3 +38,5 @@ This project is about *Image Compression* using *K-Means* clustering
    ![](https://github.com/Srishti002/Image-Compression-using-K-means-clustering/blob/main/Images/Screenshot%202024-11-04%20164847.png)
 
 6. Now we have to move our cluster centroids by calculating the mean of datapoints associated with the particular cluster.
+
+   ![](https://github.com/Srishti002/Image-Compression-using-K-means-clustering/blob/main/Images/Screenshot%202024-11-04%20170251.png)
