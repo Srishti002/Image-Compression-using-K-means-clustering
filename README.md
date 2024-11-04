@@ -30,4 +30,9 @@ This project is about *Image Compression* using *K-Means* clustering
 1. First load the desired image whichu want to compress
 2. Then convert it into 2D shape.
 3. Now randomly initialize the centroids.
-   ![]()
+   
+   ![](https://github.com/Srishti002/Image-Compression-using-K-means-clustering/blob/main/Images/Screenshot%202024-11-04%20164657.png)
+
+4. Now assign label to the rest of the pixel values means here we have selected our K=16 so initially 16 pixels as centroids were selected randomly so now we have to assign these values to the the rest of the pixels. Here we are calculating euclidean distance.
+
+5. Now we have to move our cluster centroids by calculating the mean of datapoints associated with the particular cluster.
